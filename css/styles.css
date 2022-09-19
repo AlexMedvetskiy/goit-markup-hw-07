@@ -1,6 +1,6 @@
 :root {
     /* fonts */
-  --main-fonts: "Roboto";
+  --main-fonts: "Roboto", sans-serif;
   --secondary-font: "Raleway";
 
     /* text-color */
@@ -17,7 +17,7 @@
 --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
-font-family: var(--main-fonts) "Roboto", "Raleway", sans-serif;
+font-family: var(--main-fonts);
 font-size: 14px;
 line-height:1.71;
 color: var(--accent-color);
@@ -72,6 +72,23 @@ h6,
 p {
     margin: 0;
 }
+
+.section {
+    padding: 94px, 0;
+}
+
+.section__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height:1.16;
+    text-align: center;
+    color: var(--header-color);
+    margin-bottom: 50px;
+}
+
+.section--no-padding-top {
+    padding-top: 0;
+ }
 
 .container {
     width: 1200px;
@@ -163,52 +180,31 @@ p {
    bottom: -1px;
 }
 
-.header-contact:first-child {
-    margin-left: 0px;
-}
-.list{
-    list-style: none;
-    margin-left: auto;
-}
-.header-list {
-    list-style: none;
-    transition: color var(--timing-function);
-    }
-
-
-
-.list {
+.contacts {
     display: flex;
-    justify-content: space-between;
-        align-items: center;
-        
+    margin-left: auto;
+    gap: 50px;
 }
 
-.header-contact {
-    text-decoration: none;
-    font-family: 'Roboto';
+.contacts__link {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         color: var(--accent-color);
-        margin-left: auto;
-        margin-right: 50px;
         display: flex;
         align-items: center;
         fill: currentColor;
         transition: color var(--timing-function);
   }
 
-  .header-contact:hover,
-  .header-contact:focus{
+  .contacts__link:hover,
+  .contacts__link:focus{
       color: var(--brand-color);
   }
 
-  .icons-header {
+  .contacts__icon {
     margin-right: 10px;
-    width: 16px;
-    height: 12px;
-  }
+   }
 
 
 
@@ -217,7 +213,23 @@ p {
 
 
 /* section hero */
-.section-hero{
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 94px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/img-backgrouund-odapt.jpg);
+    background-color: var(--background-color);
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
         font-family: 'Roboto';
         font-weight: 900;
         font-size: 44px;
@@ -228,25 +240,7 @@ p {
         color: var(--text-background);
 }
 
-.hero {
-    max-width: 1600px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-    url(../images/img-backgrouund-odapt.jpg);
-    background-color: var(--background-color);
-    background-position: center;
-    background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-
-   
-
-}
-
-.btn-hero{
+.hero__btn {
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 16px;
@@ -271,7 +265,7 @@ p {
 
         /* section our-mission */
 
-        .mission-to-hide {
+        .section__title--visually-hiden {
             position: absolute;
             width: 1px;
             height: 1px;
@@ -282,39 +276,23 @@ p {
             clip: rect(0 0 0 0);
 }
 
-.our-mission {
-    padding: 94px 94px;
+.features {
+    display: flex;
+    gap: 30px;
 }
 
-
-.mission-list {
-        flex-basis: 50%;}
-
-        .mission-list:not(:last-child) {
-    margin-right: 30px;
-}
-
-.mission-icons {
+.features__icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    fill: var(--accent-color);
     background-color:  #F5F4FA;
 }
 
-.svg-mission {
-    fill: var(--accent-color);
-}
 
-
-
-
-
-.mission-heading{
-    font-family: 'Roboto';
+.features__title {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -323,63 +301,43 @@ p {
         letter-spacing: 0.03em;
         margin-bottom: 10px;
 }
-.features{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
+.features__text {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--accent-color);
  }
-.features :last-child{
-    margin-right: 30px;
-}
+
 
 
 
 /* section about */
-.section-about {
-    padding: 94px 94px;
-    padding-top: 0;
+
+
+
+
+
+.works {
+    display: flex;
+    gap: 30px;
 }
 
-.about-heading{
-    font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 36px;
-        line-height:1.16;
-        text-align: center;
-        color: var(--header-color);
-        margin-bottom: 48px;
-}
-
-.img-about :last-child{
-    margin: 30px;
-    margin-left: auto;
-}
-/* Added text with background to the What We Do section */
-
-.div-about {
+.works__item {
     position: relative;
-    }
+}
 
-.label-img-about {
+.works__text {
     position: absolute;
     display: flex;
-    margin: 0;
-    padding: 0;
-    bottom: 0px;
-    margin-left: 0;
-   
-    font-family: var(--main-fonts);
-    font-style: normal;
-    text-align: center;
-    justify-content: center;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     font-size: 14px;
-    line-height: 70px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-background);

@@ -42,10 +42,10 @@
                 </li>
             </ul>
         </nav>
-        <ul class="list">
+        <ul class="contacts">
             <li>
-                <a class="header-contact" href="mailto:info@devstudio.com">
-                 <svg class="icons-header" width="16" height="12">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                 <svg class="contacts__icon" width="16" height="12">
                         <use href="./icons.svg.svg#icon-e-mail">
                          
                         </use>
@@ -54,8 +54,8 @@
                 </a>
             </li>
             <li>
-                <a class="header-contact" href="tel:+380961111111">
-                    <svg class="icons-header" width="10" height="16">
+                <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts__icon" width="10" height="16">
                         <use href="./icons.svg.svg#icon-martphone">
                             
                         </use>
@@ -70,102 +70,96 @@
         <!-- section hero -->
         <section class="hero">
             <div class="container">
-            <h1 class="section-hero">Эффективные решения для вашего бизнеса
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса
             </h1>
-            <button class="btn-hero" type="button" data-modal-open>Заказать услугу
+            <button class="hero__btn" type="button" data-modal-open>Заказать услугу
             </button>
         </div>
             </section>
            
 
 <!--section our-mission -->
-            <section class="our-mission">
+            <section class="section">
                 <div class="container">
-            <h2 class="mission-to-hide">Наша місія для Вас
+            <h2 class="section__title section__title--visually-hiden">Наша місія для Вас
             </h2>
-            <ul class="list">
-                <li class="mission-list">
-                    <div class="mission-icons">
-                        <svg class="svg-mission" width="70" height="70">
+            <ul class="features">
+                <li>
+                    <div class="features__icon-box">
+                        <svg width="70" height="70">
                             <use href="./icons.svg.svg#icon-antenna"></use>
                         </svg>
                     </div>
-                    <h3 class="mission-heading">Внимание к деталям</h3>
-                    <p class="features" >Идейные соображения, а также начало повседневной работы по формированию позиции.
+                    <h3 class="features__title">Внимание к деталям</h3>
+                    <p class="features__text" >Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li class="mission-list">
-                    <div class="mission-icons">
-                        <svg class="svg-mission" width="70" height="70">
+                <li>
+                    <div class="features__icon-box">
+                        <svg width="70" height="70">
                             <use href="./icons.svg.svg#icon-clock"></use>
                         </svg>
                     </div>
-                    <h3 class="mission-heading">Пунктуальность</h3>
-                    <p class="features">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    <h3 class="features__title">Пунктуальность</h3>
+                    <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li class="mission-list">
-                    <div class="mission-icons">
-                        <svg class="svg-mission" width="70" height="70">
+                <li>
+                    <div class="features__icon-box">
+                        <svg width="70" height="70">
                             <use href="./icons.svg.svg#icon-diagram"></use>
                         </svg>
                     </div>
-                    <h3 class="mission-heading">Планирование</h3>
-                    <p class="features">Равным образом консультация с широким активом в значительной степени обуславливает.
+                    <h3 class="features__title">Планирование</h3>
+                    <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li class="mission-list">
-                    <div class="mission-icons">
-                        <svg class="svg-mission" width="70" height="70">
+                <li>
+                    <div class="features__icon-box">
+                        <svg width="70" height="70">
                             <use href="./icons.svg.svg#icon-stronaut"></use>
                         </svg>
                     </div>
-                    <h3 class="mission-heading">Современные технологии</h3>
-                    <p class="features">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    <h3 class="features__title">Современные технологии</h3>
+                    <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                     </p>
                 </li>
             </ul>
             </div>
         </section>
-        <!-- section about -->
-        <section class="section-about">
-            <div class="container">
-            <h2 class="about-heading">Чем мы занимаемся</h2>
-            <ul class="list">
 
-                <div class="div-about">
-                <li class="li-about">
-                    <img class="img-about" 
+        <!-- section about -->
+        <section class="section section--no-padding-top">
+            <div class="container">
+            <h2 class="section__title">Чем мы занимаемся</h2>
+            <ul class="works">
+                <li class="works__item">
+                    <img 
                     src="./images/about/img-1-squoosh.jpg" 
                     alt="development for pc" 
                     width="370" 
                     height="295">
-                    <p class="label-img-about">Десктопні додатки</p>
+                    <p class="works__text">Десктопні додатки</p>
                 </li>
-                </div>
-            
-                <div class="div-about">
-                <li>            
-                    <img class="img-about" 
+                
+                <li class="works__item">           
+                    <img 
                     src="./images/about/img-2-squoosh.jpg" 
                     alt="development for mobile" 
                     width="370" 
                     height="295">
-                    <p class="label-img-about">Мобільні додатки</p>
+                    <p class="works__text">Мобільні додатки</p>
                 </li>
-            </div>
-
-                <div class="div-about">
-                <li>
-                    <img class="img-about" 
+               
+                <li class="works__item">
+                    <img 
                     src="./images/about/img-3-squoosh.jpg" 
                     alt="graphic design" 
                     width="370" 
                     height="295">
-                    <p class="label-img-about">Дизайнерські рішення</p>
+                    <p class="works__text">Дизайнерські рішення</p>
                 </li>
-                </div>
-            </ul>
+           </ul>
             </div>
         </section>
 
