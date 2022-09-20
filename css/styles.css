@@ -350,36 +350,29 @@ p {
 
 
 /* ------------------------------------------------------------------section team------------------------------------------- */
-.section-team {
-padding: 94px 0;
+.section--background-color {
 background-color: #F5F4FA;;
 }
 
-.section-team-heading{
-    font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-        color: var(--header-color);
-        
+.team {
+  display: flex;
+    gap: 30px;
 }
 
-.list-team{
+.team__item{
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background: #FFFFFF;
-   
-    }
-   
-
-
-.img-team :last-child {
-    margin-right: 30px;
+border-radius: 0px 0px 4px 4px;
+background: #FFFFFF;
 }
 
-.team-heading{
-    font-family: 'Roboto';
+.position {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  display: block;
+ }
+   
+.position__team {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
@@ -388,10 +381,9 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
         letter-spacing: 0.03em;
         margin-top: 30px;
         margin-bottom: 10px;
-
 }
-.team{
-font-family: 'Roboto';
+
+.position__text{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -400,29 +392,16 @@ font-family: 'Roboto';
     margin-bottom: 16px;
 }
 
-.box-team{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    display: block;
-   
-}
-
-.ul-icons-team{
+.position__icon-box {
 display: flex;
-    justify-content: center;
-     }
-     
-     
-   
-.icons-team  {
-margin-right: 10px;
+justify-content: center;
 }
-
-.icons-team{
+  
+.position__icon-link {
     display: flex;
     height: 44px;
     width: 44px;
+    margin-right: 10px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -431,8 +410,8 @@ margin-right: 10px;
    transition: background-color var(--timing-function), fill var(--timing-function);
            }
 
-        .icons-team:hover,
-        .icons-team:focus {
+        .position__icon-link:hover,
+        .position__icon-link:focus {
             fill: #FFFFFF;
             background-color: var(--brand-color);
         }
