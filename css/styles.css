@@ -847,7 +847,11 @@ background-color: rgba(0, 0, 0, 0.2);
 transition: opacity 750ms linear, visibility 750ms linear;
 }
 
-
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 
 
@@ -866,7 +870,7 @@ transition: opacity 750ms linear, visibility 750ms linear;
     padding: 40px;
   }
 
-  .modal-close {
+  .modal-window__modal-close {
 position: absolute;
 right: 8px;
 top: 8px;
@@ -882,17 +886,13 @@ cursor: pointer;
 background-color: #FFFFFF;
   }
 
-  .modal-close:focus,
-  .modal-close:hover {
+  .modal-window__modal-close:focus,
+  .modal-window__modal-close:hover {
     fill: var(--brand-color);
   }
 
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .modal-title {
+
+  .modal-window__modal-title {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -904,55 +904,45 @@ color: #212121;
 margin-bottom: 12px;
   }
 
-.div-label:nth-child(-n + 3) {
+.modal-form:nth-child(-n + 3) {
     margin-bottom: 10px;
    }
-   .div-label:nth-child(4) {
+   .modal-form:nth-child(4) {
     margin-bottom: 20px;
    }
-   .div-label:nth-child(5) {
+   .modal-form:nth-child(5) {
     margin-bottom: 30px;
    }
 
-.input-wrap {
+.modal-form__wrap {
     position: relative;
 }
-.form-input:focus {
+
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding-left: 42px;
+cursor: pointer;
+}
+
+.modal-form__input:focus {
     outline-color: var(--brand-color);
    }
+   
+   .modal-form__input:focus + .modal-form__icon {
+    fill: var(--brand-color);
+}
 
-.input-icon {
+.modal-form__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
-.form-input:focus + .input-icon {
-    fill: var(--brand-color);
-}
 
-  .form-input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-padding-left: 42px;
-cursor: pointer;
-  }
- 
-.label-form-input {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: #757575;
-display: block;
-margin-bottom: 4px;
-      }
-
-      .textarea-coment {
+        .modal-form__coment {
         width: 100%;
         height: 100px;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -965,16 +955,25 @@ margin-bottom: 4px;
         display: block;
         }
 
-      .textarea-coment:focus {
+      .modal-form__coment:focus {
         outline-color: var(--brand-color);
       }
 
-      .check-icon {
-        fill: transparent;
-          }
+      .check:checked + .check-text span {
+        background-color: var(--brand-color);
+        background-image: url(../images/Vector-icon.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      .check:checked + .check-text {
+        fill: #FFFFFF;
+      }
 
-      .check-text  {
-        font-family: 'Roboto';
+
+    .check__text {
+      font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -984,45 +983,38 @@ color: #757575;
 display: flex;
 align-items: center;
 justify-content: center;
-      }
+    }
 
-      
-      .check-text span {
-             width: 16px;
-       height: 15px;
-       border: 2px solid #212121;;
-       border-radius: 3px;
-       margin-right: 8px;
-       transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-          }
-
-          .input-check:checked + .check-text span {
-            background-color: var(--brand-color);
-            background-image: url(../images/Vector-icon.svg);
-            border: none;
-            background-repeat: no-repeat;
-            background-position: center;
-          }
-          .check-to-hide {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            padding: 0;
-            overflow: hidden;
-            border: 0;
-            clip: rect(0 0 0 0);
+    .check__text span {
+           width: 16px;
+     height: 15px;
+     border: 2px solid #212121;;
+     border-radius: 3px;
+     margin-right: 8px;
+     transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
         }
-          
-          .input-check:checked + .check-text {
-            fill: #FFFFFF;
+
+        /* НЕ ПРАЦЮЄ не встає чек-іконка в полісі */
+   .check--to-hide {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          border: 0;
+          clip: rect(0 0 0 0);
+      }
+      .check__icon {
+        fill: transparent;
           }
-.a-policy {
+         
+.check__policy {
     color: var(--brand-color);
     padding-left: 5px;
 }
     
-    .btn-form-modal {
+    .modal-form__btn {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;

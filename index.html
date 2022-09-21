@@ -516,86 +516,86 @@
 <!-- ------------------------MODAL------------------------------------------ -->
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal-window" >
-                <button type="button" class="modal-close" data-modal-close>
-                    <svg class="icon-close-black" width="18" height="18">
+                <button type="button" class="modal-window__modal-close" data-modal-close>
+                    <svg width="18" height="18">
                     <use href="./close.svg.svg#icon-close-black"> </use>    
                     </svg>
                 </button>  
                
-                <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                <p class="modal-window__modal-title">Залиште свої дані, ми вам передзвонимо</p>
                 
-                <form class="modal-form">
-                <div class="div-label">
-                    <label for="user-name" class="label-form-input">І'мя</label>
-                        <div class="input-wrap">
+                <form>
+                <div class="modal-form">
+                    <label for="user-name">І'мя</label>
+                        <div class="modal-form__wrap">
                     <input type="text" 
-                    class="form-input" 
+                    class="modal-form__input" 
                     name="user-name" 
                     id="user-name"
                     placeholder=""
                     required>
                
-                <svg class="input-icon"  width="18"  height="18" > 
+                <svg class="modal-form__icon"  width="18"  height="18" > 
                     <use href="./icons.svg.svg#icon-person-black"></use>
                 </svg>
             </div>
         </div>                        
-                <div class="div-label">
-                <Label for="user-tel" class="label-form-input">Телефон</Label> 
-                    <div class="input-wrap">
+                <div class="modal-form">
+                <Label for="user-tel">Телефон</Label> 
+                    <div class="modal-form__wrap">
                     <input type="tel" 
-                    class="form-input" 
+                    class="modal-form__input" 
                     name="user-tel"
                     id="user-tel" 
                     placeholder=""
                     minlength="10">
 
-                    <svg class="input-icon"  width="18"  height="18" > 
+                    <svg class="modal-form__icon"  width="18"  height="18" > 
                         <use href="./icons.svg.svg#icon-phone-black"></use>
                     </svg>
                 </div>
             </div>
-                <div class="div-label">
-                <label for="user-email"class="label-form-input">Пошта</label>
-                    <div class="input-wrap">
+                <div class="modal-form">
+                <label for="user-email">Пошта</label>
+                    <div class="modal-form__wrap">
                     <input type="email" 
-                    class="form-input" 
+                    class="modal-form__input" 
                     name="user-email" 
                     id="user-email"
                     placeholder=""> 
                   
-                    <svg class="input-icon"  width="18"  height="18" > 
+                    <svg class="modal-form__icon"  width="18"  height="18" > 
                         <use href="./icons.svg.svg#icon-email-black"></use>
                     </svg>
                 </div>
             </div>
-                <div class="div-label">
-               <label for="user-coment" class="label-form-input">Коментар</label>
+                <div class="modal-form">
+               <label for="user-coment">Коментар</label>
                <textarea name="user-coment" 
                 id="user-coment" 
-                class="textarea-coment"
+                class="modal-form__coment"
                 placeholder="Введіть текст"
                 ></textarea>
                           </div>
 
-               <div class="div-label">
+               <div class="modal-form">
                 
                 <input 
                 type="checkbox" 
                 id="user-policy"
                  name="user-policy"
                   value="conditions"
-                  class="input-check check-to-hide">
+                  class="check check--to-hide">
                
-                <label for="user-policy" class="check-text"> 
+                <label for="user-policy" class="check__text"> 
                     <span>
-                        <svg class="check-icon"  width="16"  height="15" > 
+                        <svg class="check__icon"  width="16"  height="15" > 
                             <use href="./icons.svg.svg#icon-vector-icon"></use>
                         </svg>
-                    </span>Погоджуюся з розсилкою та приймаю <a class="a-policy" href="">Умови договору</a></label> 
+                    </span>Погоджуюся з розсилкою та приймаю <a class="check__policy" href="">Умови договору</a></label> 
                </div>
                     
-               <button type="submit" class="btn-form-modal">Відправити</button>
+               <button type="submit" class="modal-form__btn">Відправити</button>
                 
                 </form>
                                    
