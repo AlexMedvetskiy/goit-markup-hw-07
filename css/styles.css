@@ -655,11 +655,9 @@ margin-left: 10px;
 ---------------------------------------------------------
 -----------------------------------------------------------
 -------------------------------------------------------- */
-.portfolio-color {
-    color:var(--brand-color);
-    }
 
-.section-filter-portfolio {
+
+.section--portfolio {
 margin-top: 94px;
 margin-bottom: 94px;
 }
