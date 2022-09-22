@@ -26,13 +26,12 @@ margin-right: 30px;
 height: 92px;
 transition: border-color var(--timing-function);
 transition: fill var(--timing-function);
+&:hover,
+&:focus {
+ border-color: var(--brand-color);
+fill: var(--brand-color);
 }
-
-   .clients__link:hover,
-   .clients__link:focus {
-    border-color: var(--brand-color);
-   fill: var(--brand-color);
-  }
+}
 
    .clients__svg {
     width: 106px;

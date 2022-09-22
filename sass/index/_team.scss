@@ -61,10 +61,11 @@
         fill: #AFB1B8;
        background-color: #FFFFFF;
        transition: background-color var(--timing-function), fill var(--timing-function);
+       &:hover,
+       &:focus {
+           fill: #FFFFFF;
+           background-color: var(--brand-color);
+       }
                }
     
-            .position__icon-link:hover,
-            .position__icon-link:focus {
-                fill: #FFFFFF;
-                background-color: var(--brand-color);
-            }
+         

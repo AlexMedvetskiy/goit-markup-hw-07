@@ -46,12 +46,13 @@
     border-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: #FFFFFF;
+    &:focus,
+    &:hover {
+      fill: var(--brand-color);
+    }
       }
     
-      .modal-window__modal-close:focus,
-      .modal-window__modal-close:hover {
-        fill: var(--brand-color);
-      }
+      
     
     
       .modal-window__modal-title {
@@ -87,11 +88,12 @@
     border-radius: 4px;
     padding-left: 42px;
     cursor: pointer;
+    &:focus {
+      outline-color: var(--brand-color);
+     }
     }
     
-    .modal-form__input:focus {
-        outline-color: var(--brand-color);
-       }
+    
        
        .modal-form__input:focus + .modal-form__icon {
         fill: var(--brand-color);
@@ -115,11 +117,10 @@
             font-size: 12px;
             cursor: pointer;
             display: block;
+            &:focus {
+              outline-color: var(--brand-color);
             }
-    
-          .modal-form__coment:focus {
-            outline-color: var(--brand-color);
-          }
+            }
     
           .check:checked + .check__text span {
             background-color: var(--brand-color);

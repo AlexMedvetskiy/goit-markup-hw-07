@@ -71,12 +71,13 @@
       justify-content: center;
       background-color: rgba(255, 255, 255, 0.1);
       transition: background-color var(--timing-function);
-  }
-  
-  .network__link:hover,
-  .network__link:focus {
+      &:hover,
+  &:focus {
       background-color: var(--brand-color);
   }
+  }
+  
+  
   
     .network__svg {
       fill: var(--text-background);
@@ -101,8 +102,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--text-background);
-  padding: 42px;
-     }
+  }
   
      .form-input {
       display: flex;
@@ -120,15 +120,16 @@
   width: 358px;
     height: 50px;
     padding: 16px;
-     }
-  
-    .form-input__email::placeholder {
+    &::placeholder {
       font-family: 'Roboto';
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
      }
+     }
+  
+    
       
   
   
