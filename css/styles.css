@@ -939,7 +939,7 @@ cursor: pointer;
         outline-color: var(--brand-color);
       }
 
-      .check:checked + .check-text span {
+      .check:checked + .check__text span {
         background-color: var(--brand-color);
         background-image: url(../images/Vector-icon.svg);
         border: none;
@@ -947,7 +947,7 @@ cursor: pointer;
         background-position: center;
       }
       
-      .check:checked + .check-text {
+      .check:checked + .check__text {
         fill: #FFFFFF;
       }
 
@@ -968,13 +968,12 @@ justify-content: center;
     .check__text span {
            width: 16px;
      height: 15px;
-     border: 2px solid #212121;;
+     border: 2px solid #212121;
      border-radius: 3px;
      margin-right: 8px;
      transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* НЕ ПРАЦЮЄ не встає чек-іконка в полісі */
    .check--to-hide {
           position: absolute;
           width: 1px;
@@ -992,7 +991,8 @@ justify-content: center;
 .check__policy {
     color: var(--brand-color);
     padding-left: 5px;
-}
+    border-bottom: 1px solid var(--brand-color);
+ }
     
     .modal-form__btn {
     font-family: 'Roboto';
