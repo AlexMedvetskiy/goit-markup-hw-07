@@ -144,10 +144,6 @@ body {
   gap: 50px;
 }
 
-.header-li:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav__link {
   text-decoration: none;
   font-family: "Roboto";
@@ -160,16 +156,13 @@ body {
   display: block;
   position: relative;
 }
-
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--brand-color);
 }
 
 .current {
   color: var(--brand-color);
 }
-
 .current::after {
   content: "";
   background-color: var(--brand-color);
@@ -205,9 +198,7 @@ body {
   -webkit-transition: color var(--timing-function);
   transition: color var(--timing-function);
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--brand-color);
 }
 
@@ -312,9 +303,7 @@ body {
   -webkit-transition: background-color var(--timing-function);
   transition: background-color var(--timing-function);
 }
-
-.network__link:hover,
-.network__link:focus {
+.network__link:hover, .network__link:focus {
   background-color: var(--brand-color);
 }
 
@@ -334,7 +323,6 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--text-background);
-  padding: 42px;
 }
 
 .form-input {
@@ -356,7 +344,6 @@ body {
   height: 50px;
   padding: 16px;
 }
-
 .form-input__email::-webkit-input-placeholder {
   font-family: "Roboto";
   font-size: 16px;
@@ -364,7 +351,6 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input__email::-moz-placeholder {
   font-family: "Roboto";
   font-size: 16px;
@@ -372,7 +358,6 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input__email:-ms-input-placeholder {
   font-family: "Roboto";
   font-size: 16px;
@@ -380,7 +365,6 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input__email::-ms-input-placeholder {
   font-family: "Roboto";
   font-size: 16px;
@@ -388,7 +372,6 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .form-input__email::placeholder {
   font-family: "Roboto";
   font-size: 16px;
@@ -485,9 +468,7 @@ body {
   cursor: pointer;
   background-color: #FFFFFF;
 }
-
-.modal-window__modal-close:focus,
-.modal-window__modal-close:hover {
+.modal-window__modal-close:focus, .modal-window__modal-close:hover {
   fill: var(--brand-color);
 }
 
@@ -527,7 +508,6 @@ body {
   padding-left: 42px;
   cursor: pointer;
 }
-
 .modal-form__input:focus {
   outline-color: var(--brand-color);
 }
@@ -556,7 +536,6 @@ body {
   cursor: pointer;
   display: block;
 }
-
 .modal-form__coment:focus {
   outline-color: var(--brand-color);
 }
@@ -695,6 +674,12 @@ body {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
+}
+.hero__btn:hover, .hero__btn:focus {
+  background: #188CE8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .section__title--visually-hiden {
@@ -861,9 +846,7 @@ body {
   -webkit-transition: background-color var(--timing-function), fill var(--timing-function);
   transition: background-color var(--timing-function), fill var(--timing-function);
 }
-
-.position__icon-link:hover,
-.position__icon-link:focus {
+.position__icon-link:hover, .position__icon-link:focus {
   fill: #FFFFFF;
   background-color: var(--brand-color);
 }
@@ -911,9 +894,7 @@ body {
   -webkit-transition: fill var(--timing-function);
   transition: fill var(--timing-function);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--brand-color);
   fill: var(--brand-color);
 }
@@ -988,16 +969,7 @@ body {
   transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
   transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
 }
-
-.portfolio-filters__button:hover {
-  color: var(--text-background);
-  background-color: var(--brand-color);
-  border: none;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-filters__button:focus {
+.portfolio-filters__button:hover, .portfolio-filters__button:focus {
   color: var(--text-background);
   background-color: var(--brand-color);
   border: none;
@@ -1024,14 +996,12 @@ body {
   transition: box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
   margin: 0;
 }
-
-.project-grid__link:hover,
-.project-grid__link:focus {
+.project-grid__link:hover, .project-grid__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-grid__link:hover .project-grid__text {
+.project-grid__link:hover .project-grid__text, .project-grid__link:focus .project-grid__text {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
